@@ -11,15 +11,15 @@
 ---
 
 ## Table of Contents
-1. [Business Problem](#business-problem)
-2. [Success Criteria](#success-criteria)
-3. [Database Schema](#database-schema)
-4. [SQL JOINs Implementation](#sql-joins-implementation)
-5. [Window Functions Implementation](#window-functions-implementation)
-6. [Results Analysis](#results-analysis)
-7. [Screenshots](#screenshots)
-8. [References](#references)
-9. [Academic Integrity Statement](#academic-integrity-statement)
+1. [Business Problem]
+2. [Success Criteria]
+3. [Database Schema]
+4. [SQL JOINs Implementation]
+5. [Window Functions Implementation]
+6. [Results Analysis]
+7. [Screenshots]
+8. [References]
+9. [Academic Integrity Statement]
 
 ---
 
