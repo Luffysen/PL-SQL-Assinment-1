@@ -107,7 +107,8 @@ LIMIT 15;
 
 **Business Interpretation:** This query retrieves complete transaction records where both the customer and product information exists in the database. It helps ensure data integrity by showing only valid sales transactions with complete information.
 
-**Screenshot:** See <img width="782" height="377" alt="image" src="https://github.com/user-attachments/assets/fb799eda-2988-4876-814a-5df87e4b772c" />
+**Screenshot:** See
+<img width="782" height="377" alt="image" src="https://github.com/user-attachments/assets/fb799eda-2988-4876-814a-5df87e4b772c" />
 
 
 ---
@@ -131,7 +132,8 @@ ORDER BY c.registration_date;
 
 **Business Interpretation:** This query identifies inactive customers who registered but never made a purchase. These customers represent potential leads for targeted marketing campaigns to convert them into active buyers.
 
-**Screenshot:** See <img width="761" height="214" alt="image" src="https://github.com/user-attachments/assets/80362a41-df5b-4b84-a1cf-e3184be2aa06" />
+**Screenshot:** See
+<img width="761" height="214" alt="image" src="https://github.com/user-attachments/assets/80362a41-df5b-4b84-a1cf-e3184be2aa06" />
 
 
 ---
