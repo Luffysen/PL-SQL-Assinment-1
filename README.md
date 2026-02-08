@@ -107,7 +107,8 @@ LIMIT 15;
 
 **Business Interpretation:** This query retrieves complete transaction records where both the customer and product information exists in the database. It helps ensure data integrity by showing only valid sales transactions with complete information.
 
-**Screenshot:** See `screenshots/01_inner_join.png`
+**Screenshot:** See `<img width="782" height="377" alt="image" src="https://github.com/user-attachments/assets/fb799eda-2988-4876-814a-5df87e4b772c" />
+`
 
 ---
 
@@ -130,7 +131,8 @@ ORDER BY c.registration_date;
 
 **Business Interpretation:** This query identifies inactive customers who registered but never made a purchase. These customers represent potential leads for targeted marketing campaigns to convert them into active buyers.
 
-**Screenshot:** See `screenshots/02_left_join.png`
+**Screenshot:** See `<img width="761" height="214" alt="image" src="https://github.com/user-attachments/assets/80362a41-df5b-4b84-a1cf-e3184be2aa06" />
+`
 
 ---
 
@@ -153,7 +155,8 @@ ORDER BY p.category, p.product_name;
 
 **Business Interpretation:** This query identifies products in inventory that have never been sold. These products may need promotional campaigns, price adjustments, or could be candidates for discontinuation to free up warehouse space and capital.
 
-**Screenshot:** See `screenshots/03_right_join.png`
+**Screenshot:** See `<img width="740" height="181" alt="image" src="https://github.com/user-attachments/assets/ce794597-61de-4b6c-aa3c-0ec534dfc541" />
+`
 
 ---
 
@@ -184,7 +187,8 @@ LIMIT 20;
 
 **Business Interpretation:** This comprehensive query provides a complete view of the customer-product-transaction relationship, highlighting gaps in the data such as customers who haven't purchased and products that haven't been sold.
 
-**Screenshot:** See `screenshots/04_full_outer_join.png`
+**Screenshot:** See `<img width="783" height="407" alt="image" src="https://github.com/user-attachments/assets/a8a55d91-e04d-4f0e-b5c9-dc528abf2fb9" />
+`
 
 ---
 
@@ -207,7 +211,8 @@ LIMIT 15;
 
 **Business Interpretation:** This query creates pairs of customers from the same region, useful for regional marketing analysis and identifying potential referral opportunities.
 
-**Screenshot:** See `screenshots/05_self_join.png`
+**Screenshot:** See `<img width="778" height="395" alt="image" src="https://github.com/user-attachments/assets/0f96a88c-254f-4fc1-8dd4-bfa880129603" />
+`
 
 ---
 
@@ -234,7 +239,8 @@ FROM (
     GROUP BY c.customer_id, c.first_name, c.last_name, c.region
 ) customer_spending;
 ```
-**Screenshot:** See `screenshots/06_row_number.png`
+**Screenshot:** See `<img width="776" height="369" alt="image" src="https://github.com/user-attachments/assets/05cbca6b-2a1e-4408-a142-dd4399a2fac3" />
+`
 
 #### RANK() - Top Products Per Region
 ```sql
@@ -260,7 +266,8 @@ SELECT
 FROM regional_product_sales
 ORDER BY region, product_rank;
 ```
-**Screenshot:** See `screenshots/07_rank.png`
+**Screenshot:** See `<img width="782" height="368" alt="image" src="https://github.com/user-attachments/assets/c3fc7b29-b8cb-46e3-ae4c-2df89caec191" />
+`
 
 #### DENSE_RANK()
 ```sql
@@ -281,7 +288,8 @@ FROM (
     GROUP BY c.customer_id, c.first_name, c.last_name, c.region
 ) customer_spending;
 ```
-**Screenshot:** See `screenshots/08_dense_rank.png`
+**Screenshot:** See `<img width="767" height="377" alt="image" src="https://github.com/user-attachments/assets/88045211-7556-4075-a814-e7c6b4fe3543" />
+`
 
 #### PERCENT_RANK()
 ```sql
@@ -302,7 +310,8 @@ FROM (
     GROUP BY c.customer_id, c.first_name, c.last_name, c.region
 ) customer_spending;
 ```
-**Screenshot:** See `screenshots/09_percent_rank.png`
+**Screenshot:** See `<img width="772" height="391" alt="image" src="https://github.com/user-attachments/assets/dbf4efc2-1412-4501-838d-2844af64ff37" />
+`
 
 ---
 
@@ -324,7 +333,8 @@ SELECT
 FROM monthly_sales
 ORDER BY sales_month;
 ```
-**Screenshot:** See `screenshots/10_sum_over.png`
+**Screenshot:** See `<img width="782" height="380" alt="image" src="https://github.com/user-attachments/assets/63408433-e9b6-44c7-8ce0-8b96a86c8c4d" />
+`
 
 #### AVG() OVER() - 3-Month Moving Average
 ```sql
@@ -345,7 +355,8 @@ SELECT
 FROM monthly_sales
 ORDER BY sales_month;
 ```
-**Screenshot:** See `screenshots/11_avg_over.png`
+**Screenshot:** See `<img width="785" height="380" alt="image" src="https://github.com/user-attachments/assets/1fad9a13-606b-4116-9e81-67d41877fa3a" />
+`
 
 #### MIN() and MAX() OVER()
 ```sql
@@ -364,7 +375,8 @@ SELECT
 FROM daily_sales
 ORDER BY transaction_date;
 ```
-**Screenshot:** See `screenshots/12_min_max_over.png`
+**Screenshot:** See `<img width="768" height="398" alt="image" src="https://github.com/user-attachments/assets/467f48e4-442e-430b-b9f0-d16cd2241b03" />
+`
 
 ---
 
@@ -392,7 +404,8 @@ SELECT
 FROM monthly_sales
 ORDER BY sales_month;
 ```
-**Screenshot:** See `screenshots/13_lag.png`
+**Screenshot:** See `<img width="779" height="398" alt="image" src="https://github.com/user-attachments/assets/39a77890-4381-4312-b5ec-befbaaa6ccad" />
+`
 
 #### LEAD() - Forward-Looking Analysis
 ```sql
@@ -415,7 +428,8 @@ SELECT
 FROM monthly_sales
 ORDER BY sales_month;
 ```
-**Screenshot:** See `screenshots/14_lead.png`
+**Screenshot:** See `<img width="776" height="386" alt="image" src="https://github.com/user-attachments/assets/c922480d-3568-4599-b927-04ede0d449d6" />
+`
 
 ---
 
@@ -451,7 +465,8 @@ SELECT
 FROM customer_totals
 ORDER BY spending_quartile, total_spent DESC;
 ```
-**Screenshot:** See `screenshots/15_ntile.png`
+**Screenshot:** See `<img width="787" height="396" alt="image" src="https://github.com/user-attachments/assets/679d4e68-72f1-41e0-9d22-ba88aecc42af" />
+`
 
 #### CUME_DIST() - Cumulative Distribution
 ```sql
@@ -475,7 +490,8 @@ SELECT
 FROM customer_totals
 ORDER BY total_spent DESC;
 ```
-**Screenshot:** See `screenshots/16_cume_dist.png`
+**Screenshot:** See `<img width="774" height="388" alt="image" src="https://github.com/user-attachments/assets/9c87cd66-0369-4cd1-a684-dcc6f36fe128" />
+`
 
 ---
 
