@@ -107,7 +107,7 @@ LIMIT 15;
 
 **Business Interpretation:** This query retrieves complete transaction records where both the customer and product information exists in the database. It helps ensure data integrity by showing only valid sales transactions with complete information.
 
-**Screenshot:** See `<img width="782" height="377" alt="image" src="https://github.com/user-attachments/assets/fb799eda-2988-4876-814a-5df87e4b772c" />
+**Screenshot:** See <img width="782" height="377" alt="image" src="https://github.com/user-attachments/assets/fb799eda-2988-4876-814a-5df87e4b772c" />
 `
 
 ---
